@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tournoi de Foot - 7 Mai</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
@@ -46,28 +46,24 @@
       { heure: "11h00", terrain: 1, e1: "Equipe 1", e2: "Equipe 2" },
       { heure: "11h00", terrain: 2, e1: "Equipe 4", e2: "Equipe 5" },
       { heure: "11h00", terrain: 3, e1: "Equipe 7", e2: "Equipe 8" },
-
       { heure: "11h20", terrain: 1, e1: "Equipe 2", e2: "Equipe 3" },
       { heure: "11h20", terrain: 2, e1: "Equipe 5", e2: "Equipe 6" },
       { heure: "11h20", terrain: 3, e1: "Equipe 8", e2: "Equipe 9" },
-
       { heure: "11h40", terrain: 1, e1: "Equipe 3", e2: "Equipe 1" },
-      { heure: "11h40", terrain: 2, e1: "Equipe 5", e2: "Equipe 6" },
+      { heure: "11h40", terrain: 2, e1: "Equipe 6", e2: "Equipe 4" },
       { heure: "11h40", terrain: 3, e1: "Equipe 9", e2: "Equipe 7" },
     ];
 
     const finales = [
-      { heure: "12h00", terrain: 1, label: "1er Poule A vs 1er Poule B", e1: "", e2: "" },
-      { heure: "12h00", terrain: 2, label: "2e Poule A vs 2e Poule B", e1: "", e2: "" },
-      { heure: "12h00", terrain: 3, label: "3e Poule A vs 3e Poule B", e1: "", e2: "" },
-
-      { heure: "12h20", terrain: 1, label: "1er Poule B vs 1er Poule C", e1: "", e2: "" },
-      { heure: "12h20", terrain: 2, label: "2e Poule B vs 2e Poule C", e1: "", e2: "" },
-      { heure: "12h20", terrain: 3, label: "3e Poule B vs 3e Poule C", e1: "", e2: "" },
-
-      { heure: "12h40", terrain: 1, label: "1er Poule C vs 1er Poule A", e1: "", e2: "" },
-      { heure: "12h40", terrain: 2, label: "2e Poule C vs 2e Poule A", e1: "", e2: "" },
-      { heure: "12h40", terrain: 3, label: "3e Poule C vs 3e Poule A", e1: "", e2: "" },
+      { heure: "12h00", terrain: 1, label: "🏆 Grande Finale : 1er Poule A vs 1er Poule B", e1: "", e2: "" },
+      { heure: "12h00", terrain: 2, label: "⚔️ Petite Finale Moyenne : 2e Poule A vs 2e Poule B", e1: "", e2: "" },
+      { heure: "12h00", terrain: 3, label: "⚔️ Petite Finale Basse : 3e Poule A vs 3e Poule B", e1: "", e2: "" },
+      { heure: "12h20", terrain: 1, label: "🏆 Grande Finale : 1er Poule B vs 1er Poule C", e1: "", e2: "" },
+      { heure: "12h20", terrain: 2, label: "⚔️ Petite Finale Moyenne : 2e Poule B vs 2e Poule C", e1: "", e2: "" },
+      { heure: "12h20", terrain: 3, label: "⚔️ Petite Finale Basse : 3e Poule B vs 3e Poule C", e1: "", e2: "" },
+      { heure: "12h40", terrain: 1, label: "🏆 Grande Finale : 1er Poule C vs 1er Poule A", e1: "", e2: "" },
+      { heure: "12h40", terrain: 2, label: "⚔️ Petite Finale Moyenne : 2e Poule C vs 2e Poule A", e1: "", e2: "" },
+      { heure: "12h40", terrain: 3, label: "⚔️ Petite Finale Basse : 3e Poule C vs 3e Poule A", e1: "", e2: "" },
     ];
 
     const scores = {};
@@ -134,7 +130,7 @@
       `;
 
       const finalesDiv = document.getElementById("finales");
-      finalesDiv.innerHTML = `<h2 class='text-xl font-semibold mb-4'>Finales</h2>`;
+      finalesDiv.innerHTML = `<h2 class='text-xl font-semibold mb-4'>Finales - À compléter manuellement</h2>`;
       finales.forEach((f, i) => {
         finalesDiv.innerHTML += `
           <div class='card'>
